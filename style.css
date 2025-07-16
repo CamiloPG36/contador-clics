@@ -1,0 +1,97 @@
+/* ===============================
+   ESTILOS GENERALES
+   =============================== */
+
+body{
+    background-color: #0f766e;
+    color: #f0fdfa;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    gap: 32px;
+    padding: 1rem;
+}
+
+h1 {
+  border-bottom: 2px solid #f0fdfa;
+  padding-bottom: 0.5rem;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+/* ===============================
+   BOTÓN CLIC
+   =============================== */
+#click-button {
+  background-color: #d2b4de;
+  color: #e91e63;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  font-family: 'Courier New', Courier, monospace;
+  border-radius: 10px;
+  cursor: pointer;
+  user-select: none;
+  height: 48px;
+  transition: background-color 0.3s ease, box-shadow 0.2s ease;
+  box-shadow: inset 0 0 0 rgba(0, 0, 0, 0); /* inicializa con sombra interna vacía */
+}
+
+#click-button:hover {
+  background-color: #e91e63;
+  color: aliceblue;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2); /* sombra interna ligera */
+}
+
+#click-button:active {
+  background-color: #c2185b;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.4);
+}
+
+/* ===============================
+   CONTADOR
+   =============================== */
+
+#number-clics{
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #330099;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 1rem;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+/* ===============================
+   BOTÓN DE REINCIO
+   =============================== */
+#reset-button {
+    display: flex;
+    background-color: #0033FF;
+    color: aliceblue;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;   
+}
+
+#reset-button:hover {
+    background-color: aliceblue;
+    color:#0033FF;
+}
+
+#reset-button:disabled {
+  visibility: hidden;
+  opacity: 0.3; /* opcional: para que no desaparezca del todo de la vista */
+  cursor: not-allowed;
+}

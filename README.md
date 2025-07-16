@@ -26,6 +26,7 @@ clicometro/
 ## 🚀 ¿Cómo usar el proyecto?
 
 1. Clona este repositorio:
+   git clone https://github.com/CamiloPG36/contador-clics
 
 2. Abre el archivo `index.html` en tu navegador favorito.
 
